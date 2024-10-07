@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "dev-msw": "set VITE_ENABLE_MSW=true && vite",
+    "msw-init": "npx msw init ./public --save",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
@@ -34,5 +35,10 @@
     "typescript-eslint": "^8.7.0",
     "vite": "^5.4.8",
     "vitest": "^2.1.2"
+  },
+  "msw": {
+    "workerDirectory": [
+      "public"
+    ]
   }
 }
