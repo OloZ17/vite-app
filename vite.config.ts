@@ -14,6 +14,9 @@ export default defineConfig({
     test: {
         environment: 'jsdom',
         setupFiles: 'setupTests.ts',
-        coverage: { include: ['src/**/*'] },
+        coverage: {
+            include: ['src/**/*'],
+            exclude: ['src/mocks', 'src/tests', 'src/lib', 'src/vite-env.d.ts'],
+        },
     },
 })
