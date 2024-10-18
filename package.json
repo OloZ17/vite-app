@@ -10,7 +10,9 @@
     "lint:fix": "eslint . --fix",
     "preview": "vite preview",
     "test": "vitest",
-    "test:coverage": "vitest run --coverage"
+    "test:coverage": "vitest run --coverage",
+    "msw:dev": "set VITE_ENABLE_MSW=true && vite",
+    "msw:init": "npx msw init ./public --save"
   },
   "dependencies": {
     "react": "^18.3.1",
@@ -27,7 +29,7 @@
     "@typescript-eslint/eslint-plugin": "^8.10.0",
     "@typescript-eslint/parser": "^8.10.0",
     "@vitejs/plugin-react": "^4.3.2",
-    "@vitest/coverage-v8": "^2.1.3",
+    "@vitest/coverage-v8": "^2.0.5",
     "eslint": "^9.12.0",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.2.1",
@@ -36,11 +38,12 @@
     "eslint-plugin-react-refresh": "^0.4.12",
     "globals": "^15.11.0",
     "jsdom": "^25.0.1",
+    "msw": "^2.4.11",
     "prettier": "^3.3.3",
     "typescript": "^5.5.3",
     "typescript-eslint": "^8.10.0",
     "vite": "^5.4.8",
     "vite-plugin-eslint2": "^5.0.0",
-    "vitest": "^2.1.3"
+    "vitest": "^2.0.5"
   }
 }

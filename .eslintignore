@@ -1,8 +1,0 @@
-package.json
-package-lock.json
-dist
-lint.*
-coverage
-node_modules
-*.config.js
-*.config.ts
